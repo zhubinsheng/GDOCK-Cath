@@ -41,8 +41,8 @@ svn co https://github.com/kenzok8/openwrt-packages/trunk/adguardhome ../diy/adgu
 echo '集成diy目录'
 ln -s ../../diy ./package/openwrt-packages
 
-#echo '首页增加CPU频率动态显示'
-#cp -f ../diy/mod-index.htm ./feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
+echo '首页增加CPU频率动态显示'
+cp -f ../diy/mod-index.htm ./feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
 
 #echo 'enable magic'
 #echo 'src-git helloworld https://github.com/fw876/helloworld'>>./feeds.conf.default
